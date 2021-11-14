@@ -45,21 +45,19 @@ export default class Api extends React.Component {
                 <Table aria-label={"collapsible table"}>
                    <TableHead>
                             <TableRow>
-                                <StyledTableCell>Pavadinimas</StyledTableCell>
-                                <StyledTableCell align="right">Valiutos kodas</StyledTableCell>
-                                <StyledTableCell align="right">Santykis</StyledTableCell>
-                                <StyledTableCell align="right">Data</StyledTableCell>
+                                <StyledTableCell align="left">Pavadinimas</StyledTableCell>
+                                <StyledTableCell align="left">Valiutos kodas</StyledTableCell>
+                                <StyledTableCell align="left">Santykis</StyledTableCell>
+                                <StyledTableCell align="left">Data</StyledTableCell>
                             </TableRow>
                    </TableHead>
                     <TableBody>
                         { this.state.posts.map(post =>
                             <StyledTableRow>
-                                <StyledTableCell component="th">
-                                </StyledTableCell>
-                                <StyledTableCell align="center">{post.pavadinimas}</StyledTableCell>
-                                <StyledTableCell align="center">{post.valiutos_kodas}</StyledTableCell>
-                                <StyledTableCell align="center">{post.santykis}</StyledTableCell>
-                                <StyledTableCell align="center">{post.data}</StyledTableCell>
+                                <StyledTableCell align="left">{post.pavadinimas}</StyledTableCell>
+                                <StyledTableCell align="left">{post.valiutos_kodas}</StyledTableCell>
+                                <StyledTableCell align="left">{post.santykis}</StyledTableCell>
+                                <StyledTableCell align="left">{post.data}</StyledTableCell>
                             </StyledTableRow>
                         )}
                     </TableBody>
